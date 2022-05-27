@@ -1,0 +1,19 @@
+Project 2
+Requirements:
+Back-End built using Spring Boot.
+Front-End built with Angular.
+Database hosted using AWS RDS.
+At least 4 user stories per team member
+Teams should be 4-5 members
+Junit to test. Achieve 70% line coverage for data/service layers
+All work must be pushed to a Github repository. Use branches to separate work.
+Reach Goals
+90% line coverage for data/service layers
+Deploy Spring Boot Application on AWS
+Use Bootstrap for styling
+Use AOP for logging or other cross-cutting concerns
+Come up with your own teams and project idea and have them approved by me. Try and achieve at least one reach goal and any others that you can come up with. Project proposals should have a general overview, user stories, and be work appropriate! These projects will go on your portfolios and be visible to clients.
+
+Due Friday 5/27
+
+Learning Front-end, HTML, CSS week of 5/16 Learning Angular week of 5/23

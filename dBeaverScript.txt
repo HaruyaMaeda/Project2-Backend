@@ -1,0 +1,29 @@
+--Ingredients
+
+--INSERT INTO bread (id, name, price) VALUES (DEFAULT, 'MultiGrain', 10.0), (DEFAULT, 'White', 10.0);
+INSERT INTO meat (id, name, price) VALUES (DEFAULT, 'Ham', 10.0), (DEFAULT, 'Turkey', 10.0);
+INSERT INTO sauce (id, name, price) VALUES (DEFAULT, 'Mustard', 10.0), (DEFAULT, 'Italian', 10.0);
+INSERT INTO seasoning (id, name, price) VALUES (DEFAULT, 'Salt', 10.0), (DEFAULT, 'CrushedRedPepper', 10.0);
+INSERT INTO vegetable (id, name, price) VALUES (DEFAULT, 'Lettuce', 10.0), (DEFAULT, 'Pickle', 10.0);
+
+--Customer
+
+INSERT INTO customer
+(customer_id, banned, email, first_name, last_name, "password", username)
+VALUES(1, false, 'sandwichEater33@bigmunch.com', 'Susan', 'Angles', 'dinefine', 'finediner');
+
+--Manager
+
+INSERT INTO manager (manager_id, manager_name, years_of_experience) values (1, 'Carol', 0);
+
+--Employee (must come before Cart)
+
+INSERT INTO employee (employee_id, employee_name, manager_id, years_of_experience) VALUES (1, 'Bob', 1, 1);
+
+--Cart (must be created before Sandwich)
+
+INSERT INTO cart (cart_id, cart_date, cost_sum, customer_id, employee_id) VALUES (DEFAULT, DEFAULT, 100.0, 1, 1);
+
+--Sandwich
+
+INSERT INTO sandwich (sandwich_id, bread_id, meat_id, sauce_id, seasoning_id, vegetable_id, cart_fk) VALUES (DEFAULT, 1, 1, 1, 1, 1, 1);

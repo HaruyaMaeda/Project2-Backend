@@ -1,0 +1,14 @@
+Chris- Wants to handle front end, logins, menu bar
+
+Ben- Wants us each to diagram a small part of the project (class/object) and code it. This would help us make connections personally and with each other with the diagram itself and what it means. 
+
+Valentina- Asked about the need for entities to be defined and how they will be represented in the diagram
+
+Ben- Wants us to experiment with diagrams by making a diagram and building out the code for a specific service. This will help us with team communication and planning
+
+The gourp agreed to try this on the sandwich building service
+
+Valentina and Chris- discussed how users will login. Using cookies/tokens that will provide a more robust and secure login process
+
+
+Then we all talked about coding topics that confuse and confound us

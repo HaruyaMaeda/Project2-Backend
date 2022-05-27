@@ -1,0 +1,27 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto11
+
+  pre_build:
+    commands:
+      - echo ======================Pre build ==================
+      - pwd
+      - ls -al
+      - ls -al ./src/main/resources/
+      - aws s3 cp s3://megabitebucket/application.properties ./src/main/resources/application.properties
+      - ls -al ./src/main/resources/
+  build:
+    commands:
+      - mvn package
+
+  post_build:
+    commands:
+
+      - mv target/megabites-0.0.1-SNAPSHOT.jar ROOT.jar
+artifacts:
+  files:
+    - ROOT.jar
+    - .ebextensions/**/*
