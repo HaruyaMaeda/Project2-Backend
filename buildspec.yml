@@ -17,7 +17,7 @@ phases:
         - echo Build completed on `date`
         - mvn package
         - mv target/megabites-0.0.1-SNAPSHOT.jar megabites-0.0.1-SNAPSHOT.jar
-  artifacts:
-    files:
-      - megabites-0.0.1-SNAPSHOT.jar
-      - .ebextensions/**/*
+artifacts:
+  files:
+    - megabites-0.0.1-SNAPSHOT.jar
+    - .ebextensions/**/*
